@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.tsukasa.rssimeasureapp.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UUID"
+        android:id="@+id/UUID"
+        android:textSize="20dp"
+        android:layout_marginTop="61dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/UUID2"
+        android:textSize="20dp"
+        android:text="不明"
+        android:layout_alignLeft="@id/UUID"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="45dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Major"
+        android:id="@+id/Major"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/UUID"
+        android:layout_alignStart="@+id/UUID"
+        android:layout_marginLeft="-5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Major2"
+        android:textSize="24dp"
+        android:text="不明"
+        android:layout_alignTop="@+id/Major"
+        android:layout_marginTop="-3dp"
+        android:layout_alignStart="@+id/UUID2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minor"
+        android:id="@+id/Minor"
+        android:textSize="20dp"
+        android:layout_below="@+id/Major"
+        android:layout_alignStart="@id/Major"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Minor2"
+        android:textSize="24dp"
+        android:text="不明"
+        android:layout_alignTop="@+id/Minor"
+        android:layout_marginTop="-3dp"
+        android:layout_alignStart="@+id/Major2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RSSI"
+        android:id="@+id/RSSI"
+        android:textSize="20dp"
+        android:layout_below="@+id/Minor"
+        android:layout_alignStart="@+id/UUID"
+        android:layout_marginTop="50dp"
+        android:layout_alignEnd="@+id/UUID" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- - dBm"
+        android:id="@+id/RSSI2"
+        android:textSize="25dp"
+        android:layout_alignTop="@+id/RSSI"
+        android:layout_marginTop="-3.5dp"
+        android:layout_alignStart="@+id/Minor2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="計測開始"
+        android:id="@+id/button"
+        android:layout_below="@+id/RSSI2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+</RelativeLayout>
